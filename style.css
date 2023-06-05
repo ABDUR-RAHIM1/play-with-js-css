@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    transition: .6s;
+}
+
+li {
+    list-style-type: none;
+}
+
+.btn {
+    border: none;
+    outline: 0;
+    font-weight: 600;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 23px;
+    cursor: pointer;
+    background-color: #25394e;
+    transition: .8s;
+}
+
+.btn:hover {
+    background-color: #182430;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    padding: 0px 100px;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(9 41 74 / 85%);
+    color: white;
+    transition: 1s;
+}
+
+
+/*  main css is start here */
+.header_Wrapper {
+    color: white;
+}
+
+.logo {
+    cursor: pointer;
+    transition: .6s;
+}
+
+.nav_bar {
+    padding: 20px 0px;
+}
+
+.logo:hover {
+    color: crimson;
+}
+
+/*  nav items */
+.nav {
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.nav ul li a {
+    font-size: 20px;
+    color: white;
+    margin: 0px 20px;
+}
+
+/*  search bar csss  */
+.search input {
+    width: 200px;
+    border: none;
+    outline: 1px solid rgb(249, 247, 247);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+/*   hero section css code is here */
+
+.heroWrapper {
+    margin-top: 50px;
+    background-image: url("image/bg.PNG");
+    background-position: top 30% right -10%;
+    background-repeat: no-repeat;
+    background-size: 500px;
+    height: 100%;
+    background-attachment: fixed;
+    transition: 1s;
+    position: relative;
+}
+
+/*  color plate css is here */
+.color_plate_wrapper {
+    width: 220px;
+    height: 50px;
+    margin-top: -50px;
+    background-color: rgb(241, 241, 241);
+    transition: 0.6s;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: -999px;
+    align-items: center;
+    justify-content: center;
+}
+
+.color {
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d85e55;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+.black {
+    background-color: #3f4347;
+}
+
+.blue {
+    background-color: #3489eb;
+}
+
+.brown {
+    background-color: brown;
+}
+
+/* color plate css end here */
+
+
+.hero {
+    align-items: flex-start;
+}
+
+.heroContent {
+    width: 50%;
+}
+
+.heroContent h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: lightblue;
+    margin-bottom: 20px;
+}
+
+.heroContent p {
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.heroImage {
+    width: 48%;
+}
+
+.heroImage img {
+    width: 100%;
+    border-radius: 385px 189px 338px 155px;
+    transition: .6s;
+    animation-name: heroAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.heroImage img:hover {
+    margin-top: 20px;
+}
+
+@keyframes heroAnimation {
+    20% {
+        margin-right: 50px;
+    }
+
+    70% {
+        margin-left: 50px;
+        border-radius: 320px 200px 320px 185px;
+    }
+}
+
+/*  categorest css code is here */
+
+.categoresWrapper {
+    margin: 100px 0px;
+    transition: 1s;
+}
+
+.categori {
+    display: none;
+    transition: 1s;
+}
+
+.categori h1 {
+    font-style: italic;
+    color: lightgray;
+    margin-bottom: 20px;
+}
+
+.categori p {
+    line-height: 1.5rem;
+}
+
+.html {
+    display: block;
+}
+
+.categoriMenu {
+    width: 70%;
+    padding: 20px;
+    margin: 100px auto;
+    margin-bottom: 30px;
+    background-color: white;
+    color: black;
+}
+
+.categoriMenu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.categoriMenu ul li button {
+    outline: 0;
+    border: 2px solid whitesmoke;
+    padding: 10px 20px;
+    background: none;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 2px 2px 10px black;
+    position: relative;
+}
+
+.categoriMenu ul li button::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    opacity: 0.5;
+    transform: scale(0);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+.categoriMenu ul li button:hover::after {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    transform: scale(1);
+    right: 0;
+}
+
+/*  image gallary css is here */
+
+.imageGallaryWrapper {
+    margin: 100px 0px;
+}
+
+.imageGallaryWrapper h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.imageGallary {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    background-color: #25394e;
+}
+
+.mainImage {
+    width: 70%;
+    margin: auto;
+}
+
+.mainImage img {
+    width: 100%;
+}
+
+.singleImage {
+    width: 25%;
+}
+
+.singleImage img {
+    width: 100%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*    animation css  */
+
+.animation {
+    margin: 100px 0px;
+}
+.animation h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.animationLine {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: crimson;
+    position: relative;
+}
+
+.animationCircle {
+    width: 30px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+    animation-name: circle;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes circle {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: 97%;
+    }
+}
+
+
+/* sldier  */
+/* .slider{
+    margin-top: 50px;
+    width: 100%;
+    height: 60vh;
+    background-image: url("image/8.PNG");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: .8s;
+} */
+.slider{
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    margin-top: 50px;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+}
+.arrow h3{
+    font-size: 35px;
+    font-weight: 800;
+    color: red;
+    background-color: #3489eb;
+    padding: 10px;
+    cursor: pointer;
+}
+.left h3{
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+.right h3{
+    position: absolute;
+    color: black;
+    top: 50%;
+    right: 0;
+}
+
+/* classlist added in js */
+
+.playOn{
+    margin: 20px 0px;
+}
+.playOneClass{
+    color: red;
+    font-size: 20px;
+    font-weight: bolder;
+    line-height: 1.5rem;
+    background-color: black;
+    transition: .5s;
+}
